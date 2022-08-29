@@ -1,4 +1,6 @@
 #!/usr/bin/python3
-def print_list_iteger(my_list=[]):
-    for items in my_list:
-        print("{:d}".format(items))
+def print_reversed_list_integer(my_list=[]):
+    lenn = len(my_list)-1
+    while(lenn >= 0):
+        print("{:d}".format(my_list[lenn]))
+        lenn -= 1
