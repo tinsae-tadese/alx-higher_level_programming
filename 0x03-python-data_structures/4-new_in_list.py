@@ -4,7 +4,7 @@ def replace_in_list(my_list, idx, element):
     for items in newllist:
         if(idx < 0):
             return newllist
-        elif(idx > len(newllist) - 1):
+        elif(idx >= len(newllist)):
             return newllist
         else:
             newllist[idx] = element
