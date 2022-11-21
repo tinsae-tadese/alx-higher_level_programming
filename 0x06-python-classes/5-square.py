@@ -52,7 +52,10 @@ class Square:
         prints the square with character
         :return:
         """
-        if self.size is 0:
+        if self.size == 0:
             print("")
         else:
-            print(self.area() * '#')
+            for row in range(self.__size):
+                for column in range(self.__size):
+                    print("#", end="")
+                print()
