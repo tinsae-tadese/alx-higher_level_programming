@@ -23,16 +23,16 @@ class Square:
         Returns the current square
         area
         """
-        return (self.__size * self.__size)
+        return self.__size * self.__size
 
-    def get_size(self):
+    def size(self):
         """
        Get size
        :return: size
        """
         return self.__size
 
-    def set_size(self, value):
+    def size(self, value):
         """
        Set size
        :param self:
