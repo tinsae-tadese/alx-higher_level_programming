@@ -6,5 +6,9 @@ class Square:
     """ Square Class
     """
     def __init__(self, size):
+        """
+        Constructructor with instantiation
+        of size
+        """
         self.__size = size
 
