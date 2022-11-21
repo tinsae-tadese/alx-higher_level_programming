@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" Creates a class Square """
+""" Creates a class Square
+"""
 
 
 class Square:
@@ -11,4 +12,3 @@ class Square:
         of size
         """
         self.__size = size
-
