@@ -10,7 +10,7 @@ class Square:
         """
         Constructor with instantiation
         of size
-        """i
+        """
         if type(size) is not int:
             raise TypeError("Size must be an integer")
         if size < 0:
