@@ -23,7 +23,7 @@ class Square:
         Returns the current square
         area
         """
-        return self.__size * self.__size
+        return (self.__size * self.__size)
 
     def get_size(self):
         """
@@ -32,11 +32,15 @@ class Square:
        """
         return self.__size
 
-    def set_size(self, size):
+    def set_size(self, value):
         """
        Set size
        :param self:
-       :param size:
+       :param value:
        :return: none
        """
-        self.__size = size
+        if type(value) is not int:
+            raise TypeError("size must be an integer")
+        if value < 0:
+            raise ValueError("size must be > 0")
+        self.__size = value
