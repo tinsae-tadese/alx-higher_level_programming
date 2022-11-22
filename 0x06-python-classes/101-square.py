@@ -93,6 +93,11 @@ class Square:
             self.__position = value
 
         def __str__(self):
+            """
+            do just ike my_print function
+            :param self:
+            :return:
+            """
             self.my_list = []
             if self.__size == 0:
                 return ""
