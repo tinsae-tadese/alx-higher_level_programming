@@ -4,12 +4,14 @@
 
 
 class Square:
-    """ Square Class
     """
+    Square class
+    """
+
     def __init__(self, size=0):
         """
-        Constructor with instantiation
-        of size
+        Instantiation with size
+        :param size:
         """
         if type(size) is not int:
             raise TypeError("Size must be an integer")
