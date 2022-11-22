@@ -57,10 +57,11 @@ class Square:
             print()
             return
         else:
-            for row in range(self.__size):
-                for column in range(self.__size):
-                    print("#", end="")
+            for y in range(self.__position[1]):
                 print()
+            for x in range(self.__size):
+                print(" " * self.__position[0], end="")
+                print("#" * self.__size)
 
     @property
     def position(self):
@@ -68,10 +69,15 @@ class Square:
             Return position
         :return:
         """
-        return self.position
+        return self.__position
 
     @position.setter
     def position(self, value):
+        """
+        Used to set the position value
+        :param value:
+        :return:
+        """
         if type(value) is not tuple:
             raise TypeError("position must be a tuple of two positive integer")
         elif len(value) != 2:
@@ -83,4 +89,4 @@ class Square:
         elif value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of two positive integer")
         else:
-            self.position = value
+            self.__position = value
