@@ -1,3 +1,3 @@
---creating  database
---if not exist
+--script that creates database hbtn_0c_0
+--does not fail if not exists
 CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
