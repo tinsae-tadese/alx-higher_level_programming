@@ -1,5 +1,5 @@
--- import database table temperature
---display average temprature.
+-- import database table temperaturei
+-- display average temprature.
 SELECT city, AVG(value) as avg_temp
 FROM temperatures
 GROUP BY city
